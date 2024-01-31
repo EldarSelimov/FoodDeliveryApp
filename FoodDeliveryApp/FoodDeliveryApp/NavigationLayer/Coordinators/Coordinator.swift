@@ -8,7 +8,7 @@
 import UIKit
 
 enum CoordinatorType {
-    case up
+    case app
     case onboarding
     case home
     case order
@@ -38,4 +38,41 @@ extension CoordinatorProtocol {
 
 protocol CoordinatorFinishDelegate: AnyObject {
     func coordinatorFinishDelegate(childCoordinators: CoordinatorProtocol)
+}
+
+protocol TabBarCoordinator: AnyObject, CoordinatorProtocol {
+    var tabBarController: UITabBarController? { get set }
+}
+
+class Coordinator: CoordinatorProtocol {
+    var childCoordinators: [CoordinatorProtocol] = []
+    
+    var type: CoordinatorType
+    
+    var navigationController: UINavigationController?
+    
+    var finishDelegate: CoordinatorFinishDelegate?
+    
+    init(childCoordinators: [CoordinatorProtocol] = [CoordinatorProtocol](), type: CoordinatorType, navigationController: UINavigationController, finishDelegate: CoordinatorFinishDelegate? = nil) {
+        self.childCoordinators = childCoordinators
+        self.type = type
+        self.navigationController = navigationController
+        self.finishDelegate = finishDelegate
+    }
+    
+    deinit {
+        print("Coordinator deinited \(type)")
+        childCoordinators.forEach { $0.finishDelegate = nil }
+        childCoordinators.removeAll()
+    }
+    
+    func start() {
+        print("Coordinator start")
+    }
+    
+    func finish() {
+        print("Coordinator finish")
+    }
+    
+    
 }
