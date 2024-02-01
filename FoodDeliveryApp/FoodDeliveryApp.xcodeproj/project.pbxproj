@@ -19,6 +19,11 @@
 		52C68AFE2B6ADC4C00112C57 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68AFD2B6ADC4C00112C57 /* Coordinator.swift */; };
 		52C68B002B6AE28100112C57 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68AFF2B6AE28100112C57 /* AppCoordinator.swift */; };
 		52C68B022B6AE32D00112C57 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B012B6AE32D00112C57 /* OnboardingCoordinator.swift */; };
+		52C68B052B6BB19400112C57 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B042B6BB19400112C57 /* HomeCoordinator.swift */; };
+		52C68B072B6BB1EA00112C57 /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B062B6BB1EA00112C57 /* OrderCoordinator.swift */; };
+		52C68B092B6BB21900112C57 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B082B6BB21900112C57 /* ListCoordinator.swift */; };
+		52C68B0B2B6BB24000112C57 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B0A2B6BB24000112C57 /* ProfileCoordinator.swift */; };
+		52C68B0D2B6BB26400112C57 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B0C2B6BB26400112C57 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		52C68AFD2B6ADC4C00112C57 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		52C68AFF2B6AE28100112C57 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		52C68B012B6AE32D00112C57 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		52C68B042B6BB19400112C57 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		52C68B062B6BB1EA00112C57 /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		52C68B082B6BB21900112C57 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		52C68B0A2B6BB24000112C57 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		52C68B0C2B6BB26400112C57 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +129,7 @@
 		52C68AFB2B6ADC2B00112C57 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				52C68B0C2B6BB26400112C57 /* TabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,9 +137,13 @@
 		52C68AFC2B6ADC3A00112C57 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				52C68B042B6BB19400112C57 /* HomeCoordinator.swift */,
 				52C68AFD2B6ADC4C00112C57 /* Coordinator.swift */,
 				52C68AFF2B6AE28100112C57 /* AppCoordinator.swift */,
 				52C68B012B6AE32D00112C57 /* OnboardingCoordinator.swift */,
+				52C68B062B6BB1EA00112C57 /* OrderCoordinator.swift */,
+				52C68B082B6BB21900112C57 /* ListCoordinator.swift */,
+				52C68B0A2B6BB24000112C57 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -210,7 +225,12 @@
 				52C68AF92B6ABA4B00112C57 /* AppColors.swift in Sources */,
 				52C68B022B6AE32D00112C57 /* OnboardingCoordinator.swift in Sources */,
 				52C68B002B6AE28100112C57 /* AppCoordinator.swift in Sources */,
+				52C68B072B6BB1EA00112C57 /* OrderCoordinator.swift in Sources */,
 				52C68ADE2B69800300112C57 /* SceneDelegate.swift in Sources */,
+				52C68B0B2B6BB24000112C57 /* ProfileCoordinator.swift in Sources */,
+				52C68B092B6BB21900112C57 /* ListCoordinator.swift in Sources */,
+				52C68B052B6BB19400112C57 /* HomeCoordinator.swift in Sources */,
+				52C68B0D2B6BB26400112C57 /* TabBarController.swift in Sources */,
 				52C68AF72B6AB94E00112C57 /* UIColor+Extension.swift in Sources */,
 				52C68AFE2B6ADC4C00112C57 /* Coordinator.swift in Sources */,
 			);

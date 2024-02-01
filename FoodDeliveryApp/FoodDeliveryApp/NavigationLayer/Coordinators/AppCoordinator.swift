@@ -11,7 +11,8 @@ class AppCoordinator: Coordinator {
     
     
     override func start() {
-        showOnboardingFlow()
+//        showOnboardingFlow()
+        showMainFlow()
     }
     
     override func finish() {
@@ -27,7 +28,42 @@ private extension AppCoordinator {
         onboardingCoordinator.start()
     }
     func showMainFlow() {
+        guard let navigationController = navigationController else { return }
         
+        let homeNavigationController = UINavigationController()
+        let homeCoordinator = HomeCoordinator(type: .home, navigationController: homeNavigationController)
+        homeNavigationController.tabBarItem = UITabBarItem(title: "Home", image:  UIImage.init(systemName: "swirl.circle.righthalf.filled"), tag: 0)
+        homeCoordinator.finishDelegate = self
+        homeCoordinator.start()
+        
+        let orderNavigatiobController = UINavigationController()
+        let orderCoordinator = OrderCoordinator(type: .order, navigationController: orderNavigatiobController)
+        orderNavigatiobController.tabBarItem = UITabBarItem(title: "Order", image:  UIImage.init(systemName: "swirl.circle.righthalf.filled"), tag: 1)
+        orderCoordinator.finishDelegate = self
+        orderCoordinator.start()
+        
+        let listNavigatiobController = UINavigationController()
+        let listCoordinator = ListCoordinator(type: .list, navigationController: listNavigatiobController)
+        listNavigatiobController.tabBarItem = UITabBarItem(title: "List", image:  UIImage.init(systemName: "swirl.circle.righthalf.filled"), tag: 2)
+        listCoordinator.finishDelegate = self
+        listCoordinator.start()
+        
+        let profileNavigatiobController = UINavigationController()
+        let profileCoordinator = ProfileCoordinator(type: .profile, navigationController: profileNavigatiobController)
+        profileNavigatiobController.tabBarItem = UITabBarItem(title: "Profile", image:  UIImage.init(systemName: "swirl.circle.righthalf.filled"), tag: 3)
+        profileCoordinator.finishDelegate = self
+        profileCoordinator.start()
+        
+        addChildCoordinator(homeCoordinator)
+        addChildCoordinator(orderCoordinator)
+        addChildCoordinator(listCoordinator)
+        addChildCoordinator(profileCoordinator)
+        
+        let tabBarControllers = [homeNavigationController, orderNavigatiobController, listNavigatiobController, profileNavigatiobController]
+        
+        let tabBarController = TabBarController(tabBarControllers: tabBarControllers)
+        
+        navigationController.pushViewController(tabBarController, animated: true)
     }
 }
 
