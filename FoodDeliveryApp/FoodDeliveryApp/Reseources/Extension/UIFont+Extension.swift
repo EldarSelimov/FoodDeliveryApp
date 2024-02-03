@@ -75,7 +75,7 @@ extension UIFont {
 private extension UIFont {
     enum Constrants {
         enum Roboto {
-            static let black = "Roboto-Black"
+            static let black        = "Roboto-Black"
             static let blackItalic  = "Roboto-BlackItalic"
             static let bold         = "Roboto-Bold"
             static let boldItalic   = "Roboto-BoldItalic"
