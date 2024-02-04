@@ -24,6 +24,8 @@
 		52C68B092B6BB21900112C57 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B082B6BB21900112C57 /* ListCoordinator.swift */; };
 		52C68B0B2B6BB24000112C57 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B0A2B6BB24000112C57 /* ProfileCoordinator.swift */; };
 		52C68B0D2B6BB26400112C57 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B0C2B6BB26400112C57 /* TabBarController.swift */; };
+		52C68B112B6EBB4D00112C57 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B102B6EBB4D00112C57 /* OnboardingViewController.swift */; };
+		52C68B132B6EBB9500112C57 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B122B6EBB9500112C57 /* OnboardingViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		52C68B082B6BB21900112C57 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		52C68B0A2B6BB24000112C57 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		52C68B0C2B6BB26400112C57 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		52C68B102B6EBB4D00112C57 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		52C68B122B6EBB9500112C57 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		52C68ADA2B69800300112C57 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				52C68B0E2B6EBAF100112C57 /* UILayer */,
 				52C68AFA2B6ADC1300112C57 /* NavigationLayer */,
 				52C68AEF2B6A78FF00112C57 /* Reseources */,
 				52C68ADB2B69800300112C57 /* AppDelegate.swift */,
@@ -146,6 +151,23 @@
 				52C68B0A2B6BB24000112C57 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		52C68B0E2B6EBAF100112C57 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				52C68B0F2B6EBB2F00112C57 /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		52C68B0F2B6EBB2F00112C57 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				52C68B102B6EBB4D00112C57 /* OnboardingViewController.swift */,
+				52C68B122B6EBB9500112C57 /* OnboardingViewPresenter.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,12 +248,14 @@
 				52C68B022B6AE32D00112C57 /* OnboardingCoordinator.swift in Sources */,
 				52C68B002B6AE28100112C57 /* AppCoordinator.swift in Sources */,
 				52C68B072B6BB1EA00112C57 /* OrderCoordinator.swift in Sources */,
+				52C68B112B6EBB4D00112C57 /* OnboardingViewController.swift in Sources */,
 				52C68ADE2B69800300112C57 /* SceneDelegate.swift in Sources */,
 				52C68B0B2B6BB24000112C57 /* ProfileCoordinator.swift in Sources */,
 				52C68B092B6BB21900112C57 /* ListCoordinator.swift in Sources */,
 				52C68B052B6BB19400112C57 /* HomeCoordinator.swift in Sources */,
 				52C68B0D2B6BB26400112C57 /* TabBarController.swift in Sources */,
 				52C68AF72B6AB94E00112C57 /* UIColor+Extension.swift in Sources */,
+				52C68B132B6EBB9500112C57 /* OnboardingViewPresenter.swift in Sources */,
 				52C68AFE2B6ADC4C00112C57 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
