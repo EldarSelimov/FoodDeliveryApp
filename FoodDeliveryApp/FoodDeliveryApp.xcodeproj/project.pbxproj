@@ -26,6 +26,7 @@
 		52C68B0D2B6BB26400112C57 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B0C2B6BB26400112C57 /* TabBarController.swift */; };
 		52C68B112B6EBB4D00112C57 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B102B6EBB4D00112C57 /* OnboardingViewController.swift */; };
 		52C68B132B6EBB9500112C57 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68B122B6EBB9500112C57 /* OnboardingViewPresenter.swift */; };
+		52E85B0D2B6FBB9300B19698 /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E85B0C2B6FBB9300B19698 /* OnboardingPartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		52C68B0C2B6BB26400112C57 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		52C68B102B6EBB4D00112C57 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		52C68B122B6EBB9500112C57 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		52E85B0C2B6FBB9300B19698 /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				52C68AFC2B6ADC3A00112C57 /* Coordinators */,
-				52C68AFB2B6ADC2B00112C57 /* Controllers */,
 			);
 			path = NavigationLayer;
 			sourceTree = "<group>";
@@ -147,6 +148,7 @@
 				52C68AFF2B6AE28100112C57 /* AppCoordinator.swift */,
 				52C68B012B6AE32D00112C57 /* OnboardingCoordinator.swift */,
 				52C68B062B6BB1EA00112C57 /* OrderCoordinator.swift */,
+				52C68AFB2B6ADC2B00112C57 /* Controllers */,
 				52C68B082B6BB21900112C57 /* ListCoordinator.swift */,
 				52C68B0A2B6BB24000112C57 /* ProfileCoordinator.swift */,
 			);
@@ -166,6 +168,7 @@
 			children = (
 				52C68B102B6EBB4D00112C57 /* OnboardingViewController.swift */,
 				52C68B122B6EBB9500112C57 /* OnboardingViewPresenter.swift */,
+				52E85B0C2B6FBB9300B19698 /* OnboardingPartViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				52C68B092B6BB21900112C57 /* ListCoordinator.swift in Sources */,
 				52C68B052B6BB19400112C57 /* HomeCoordinator.swift in Sources */,
 				52C68B0D2B6BB26400112C57 /* TabBarController.swift in Sources */,
+				52E85B0D2B6FBB9300B19698 /* OnboardingPartViewController.swift in Sources */,
 				52C68AF72B6AB94E00112C57 /* UIColor+Extension.swift in Sources */,
 				52C68B132B6EBB9500112C57 /* OnboardingViewPresenter.swift in Sources */,
 				52C68AFE2B6ADC4C00112C57 /* Coordinator.swift in Sources */,
