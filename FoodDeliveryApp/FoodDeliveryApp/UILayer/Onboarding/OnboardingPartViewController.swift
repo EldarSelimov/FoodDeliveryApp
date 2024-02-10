@@ -26,6 +26,8 @@ class OnboardingPartViewController: UIViewController {
             descriptionLabel.text = descriptionText
         }
     }
+    var buttonText: String?
+    
     
     
     private let imageView   = UIImageView()
