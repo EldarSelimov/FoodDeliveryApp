@@ -9,10 +9,14 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
+    private var userStorage = UserStorage.shared
     
     override func start() {
-//        showOnboardingFlow()
-        showOnboardingFlow()
+        if userStorage.passedOnboarding {
+            showMainFlow()
+        } else {
+            showOnboardingFlow()
+        }
     }
     
     override func finish() {
@@ -71,6 +75,9 @@ extension AppCoordinator: CoordinatorFinishDelegate {
     func coordinatorFinishDelegate(childCoordinators: CoordinatorProtocol) {
         removeChildCoordinator(childCoordinators)
         switch childCoordinators.type {
+        case.onboarding:
+            navigationController?.viewControllers.removeAll()
+            showMainFlow()
         case .app:
             return
         default:
