@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5284F6692B77963400E0739C /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284F6682B77963400E0739C /* UserStorage.swift */; };
+		52A8B5E92B78CBBE001FCB81 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8B5E82B78CBBE001FCB81 /* SceneFactory.swift */; };
 		52C68ADC2B69800300112C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68ADB2B69800300112C57 /* AppDelegate.swift */; };
 		52C68ADE2B69800300112C57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68ADD2B69800300112C57 /* SceneDelegate.swift */; };
 		52C68AE02B69800300112C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C68ADF2B69800300112C57 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		5284F6682B77963400E0739C /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		52A8B5E82B78CBBE001FCB81 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		52C68AD82B69800300112C57 /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C68ADB2B69800300112C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C68ADD2B69800300112C57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = SevicesLayer;
 			sourceTree = "<group>";
 		};
+		52A8B5E72B78CBA0001FCB81 /* SceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				52A8B5E82B78CBBE001FCB81 /* SceneFactory.swift */,
+			);
+			path = SceneFactory;
+			sourceTree = "<group>";
+		};
 		52C68ACF2B69800300112C57 = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +104,11 @@
 		52C68ADA2B69800300112C57 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				52C68ADB2B69800300112C57 /* AppDelegate.swift */,
 				5284F6672B77961D00E0739C /* SevicesLayer */,
 				52C68B0E2B6EBAF100112C57 /* UILayer */,
 				52C68AFA2B6ADC1300112C57 /* NavigationLayer */,
 				52C68AEF2B6A78FF00112C57 /* Reseources */,
-				52C68ADB2B69800300112C57 /* AppDelegate.swift */,
 				52C68ADD2B69800300112C57 /* SceneDelegate.swift */,
 				52C68ADF2B69800300112C57 /* ViewController.swift */,
 				52C68AE42B69800600112C57 /* Assets.xcassets */,
@@ -169,6 +179,7 @@
 		52C68B0E2B6EBAF100112C57 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				52A8B5E72B78CBA0001FCB81 /* SceneFactory */,
 				52C68B0F2B6EBB2F00112C57 /* Onboarding */,
 			);
 			path = UILayer;
@@ -270,6 +281,7 @@
 				52C68B0D2B6BB26400112C57 /* TabBarController.swift in Sources */,
 				52E85B0D2B6FBB9300B19698 /* OnboardingPartViewController.swift in Sources */,
 				5284F6692B77963400E0739C /* UserStorage.swift in Sources */,
+				52A8B5E92B78CBBE001FCB81 /* SceneFactory.swift in Sources */,
 				52C68AF72B6AB94E00112C57 /* UIColor+Extension.swift in Sources */,
 				52C68B132B6EBB9500112C57 /* OnboardingViewPresenter.swift in Sources */,
 				52C68AFE2B6ADC4C00112C57 /* Coordinator.swift in Sources */,
